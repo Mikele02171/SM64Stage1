@@ -1,2 +1,2 @@
-# Super Mario 64: Boomb Omb Battlefield Stage 1
+# Super Mario 64: Bomb Omb Battlefield Stage 1
 
