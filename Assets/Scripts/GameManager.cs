@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+
+public class GameManager : MonoBehaviour
+{
+
+    public int CurrentGold;
+    
+    public Text CoinText;
+    
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void AddGold(int goldToAdd)
+    {
+        CurrentGold += goldToAdd;
+        CoinText.text = "Coins: "+ CurrentGold;
+        if (CurrentGold >= 100)
+        {
+            SceneManager.LoadScene("LevelComplete");
+        }
+
+    }
+
+
+
+
+}
